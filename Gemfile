@@ -19,6 +19,7 @@ end
 
 group :development, :unit_tests do
   gem 'ansi'
+	gem 'backports'
 	gem 'metadata-json-lint'
   gem 'puppet_facts'
   gem 'puppet-blacksmith', '>= 3.4.0'
