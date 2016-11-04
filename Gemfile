@@ -31,7 +31,7 @@ group :development, :unit_tests do
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
   gem 'rspec-puppet', '>= 2.3.2'
   gem 'rspec-puppet-facts'
-  gem 'mocha', '< 1.2.0'
+  gem 'mocha'
   gem 'simplecov'
   gem 'parallel_tests', '< 2.10.0' if RUBY_VERSION < '2.0.0'
   gem 'parallel_tests' if RUBY_VERSION >= '2.0.0'
