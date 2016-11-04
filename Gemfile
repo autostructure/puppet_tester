@@ -41,6 +41,7 @@ group :development, :unit_tests do
   gem 'rubocop' if RUBY_VERSION >= '2.0.0'
   gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
   gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
+  gem 'json_pure' if RUBY_VERSION >= '2.0.0'
 
 	gem "puppet-lint-absolute_classname-check"
 	gem "puppet-lint-leading_zero-check"
