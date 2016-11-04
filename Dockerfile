@@ -1,5 +1,7 @@
 FROM ruby:latest
 
-ADD Gemfile
+WORKDIR /tmp
+
+COPY Gemfile .
 
 RUN gem install bundler && bundle update
