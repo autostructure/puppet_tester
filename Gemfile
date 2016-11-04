@@ -25,6 +25,8 @@ group :development, :unit_tests do
 	gem "specinfra", '2.64.0' # , '< 3.2.0'
 	gem "travis"
 	gem "travis-lint"
+	gem "puppet-blacksmith"
+	gem "guard-rake"
   gem 'puppet-blacksmith', '>= 3.4.0'
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
   gem 'rspec-puppet', '>= 2.3.2'
