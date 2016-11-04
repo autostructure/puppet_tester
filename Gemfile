@@ -23,8 +23,8 @@ group :development, :unit_tests do
 	gem 'metadata-json-lint'
   gem 'puppet_facts'
 	gem "specinfra", '2.64.0' # , '< 3.2.0'
-	gem 'coderay'
-	gem 'connection_pool'
+	gem "travis"
+	gem "travis-lint"
   gem 'puppet-blacksmith', '>= 3.4.0'
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
   gem 'rspec-puppet', '>= 2.3.2'
@@ -38,6 +38,7 @@ group :development, :unit_tests do
   gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
   gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
 end
+
 group :system_tests do
   gem 'beaker', *location_from_env('BEAKER_VERSION', []) if RUBY_VERSION >= '2.3.0'
   gem 'beaker', *location_from_env('BEAKER_VERSION', ['< 3']) if RUBY_VERSION < '2.3.0'
