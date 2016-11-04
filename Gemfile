@@ -39,6 +39,13 @@ group :development, :unit_tests do
   gem 'rubocop' if RUBY_VERSION >= '2.0.0'
   gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
   gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
+
+	gem "puppet-lint-absolute_classname-check"
+	gem "puppet-lint-leading_zero-check"
+	gem "puppet-lint-trailing_comma-check"
+	gem "puppet-lint-version_comparison-check"
+	gem "puppet-lint-classes_and_types_beginning_with_digits-check"
+	gem "puppet-lint-unquoted_string-check"
 end
 
 group :system_tests do
