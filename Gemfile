@@ -18,7 +18,8 @@ def location_from_env(env, default_location = [])
 end
 
 group :development, :unit_tests do
-  gem 'metadata-json-lint'
+  gem 'ansi'
+	gem 'metadata-json-lint'
   gem 'puppet_facts'
   gem 'puppet-blacksmith', '>= 3.4.0'
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
