@@ -40,6 +40,7 @@ group :development, :unit_tests do
   gem 'rubocop', '0.41.2' if RUBY_VERSION < '2.0.0'
   gem 'rubocop' if RUBY_VERSION >= '2.0.0'
   gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
+	gem 'json'
   gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
   gem 'json_pure' if RUBY_VERSION >= '2.0.0'
 
