@@ -33,6 +33,7 @@ group :development, :unit_tests do
   gem 'rspec-puppet-facts'
   gem 'mocha'
   gem 'simplecov'
+  gem 'simplecov-console'
   gem 'parallel_tests', '< 2.10.0' if RUBY_VERSION < '2.0.0'
   gem 'parallel_tests' if RUBY_VERSION >= '2.0.0'
   gem 'rubocop', '0.41.2' if RUBY_VERSION < '2.0.0'
