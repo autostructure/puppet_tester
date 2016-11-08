@@ -19,32 +19,41 @@ end
 
 group :development, :unit_tests do
   gem 'ansi'
-	gem 'backports'
+	# gem 'backports'
+	# gem 'connection_pool'
+	# gem 'ethon'
 	gem 'metadata-json-lint'
   gem 'puppet_facts'
-	gem "specinfra" #, '2.64.0' # , '< 3.2.0'
+	# gem 'faraday_middleware'
 	gem 'fog-vsphere', '1.5.0'
-	gem "hirb"
-	# gem "travis"
-	# gem "travis-lint"
-	gem "puppet-blacksmith"
-	gem "guard-rake"
-  gem 'puppetlabs_spec_helper', '>= 1.2.1'
-  gem 'public_suffix', '2.0.3'
-  gem 'rspec-puppet', '>= 2.3.2'
-  gem 'rspec-puppet-facts'
-  gem 'mocha'
-  gem 'simplecov'
-  gem 'simplecov-console'
-	gem 'syck'
-  gem 'parallel_tests', '< 2.10.0' if RUBY_VERSION < '2.0.0'
-  gem 'parallel_tests' if RUBY_VERSION >= '2.0.0'
-  gem 'rubocop', '0.41.2' if RUBY_VERSION < '2.0.0'
-  gem 'rubocop' if RUBY_VERSION >= '2.0.0'
-  gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
+	gem 'hirb'
+	gem 'puppet-blacksmith'
+	# gem 'gh'
+	gem 'guard-rake'
+	# gem 'highline'
 	gem 'json'
   gem 'json_pure', '<= 2.0.1' if RUBY_VERSION < '2.0.0'
   gem 'json_pure' if RUBY_VERSION >= '2.0.0'
+	# gem 'launchy'
+  gem 'mocha'
+	# gem 'net-http-persistent'
+	# gem 'net-http-pipeline'
+	gem 'net-telnet'
+  gem 'parallel_tests', '< 2.10.0' if RUBY_VERSION < '2.0.0'
+  gem 'parallel_tests' if RUBY_VERSION >= '2.0.0'
+  gem 'puppetlabs_spec_helper', '>= 1.2.1'
+  gem 'public_suffix', '2.0.3'
+	# gem 'pusher-client'
+  gem 'rspec-puppet', '>= 2.3.2'
+  gem 'rspec-puppet-facts'
+  gem 'rubocop', '0.41.2' if RUBY_VERSION < '2.0.0'
+  gem 'rubocop' if RUBY_VERSION >= '2.0.0'
+  gem 'rubocop-rspec', '~> 1.6' if RUBY_VERSION >= '2.3.0'
+  gem 'simplecov'
+  gem 'simplecov-console'
+	gem 'syck'
+	# gem 'typhoeus'
+	# gem 'websocket'
 
 	gem "puppet-lint-absolute_classname-check"
 	gem "puppet-lint-leading_zero-check"
@@ -59,6 +68,9 @@ group :system_tests do
   gem 'beaker-pe' if RUBY_VERSION >= '2.3.0'
   gem 'beaker-rspec', *location_from_env('BEAKER_RSPEC_VERSION', ['>= 3.4'])
   gem 'serverspec'
+	gem 'specinfra', '2.64.0' # , '< 3.2.0'
+	gem 'travis'
+	gem 'travis-lint'
   gem 'beaker-puppet_install_helper'
   gem 'master_manipulator'
   gem 'beaker-hostgenerator', *location_from_env('BEAKER_HOSTGENERATOR_VERSION', [])
