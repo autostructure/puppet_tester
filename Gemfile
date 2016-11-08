@@ -29,6 +29,7 @@ group :development, :unit_tests do
 	gem "puppet-blacksmith"
 	gem "guard-rake"
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
+  gem 'public_suffix', '2.0.3'
   gem 'rspec-puppet', '>= 2.3.2'
   gem 'rspec-puppet-facts'
   gem 'mocha'
