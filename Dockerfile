@@ -1,7 +1,6 @@
 FROM ruby:latest
 
 COPY docker.repo /etc/yum.repos.d/
-COPY Gemfile .
 
 RUN apt-get -y update && \
     apt-get -y install apt-transport-https ca-certificates && \
@@ -13,9 +12,10 @@ RUN apt-get -y update && \
     apt-get -y install docker-engine && \
     wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb && \
     dpkg -i puppetlabs-release-precise.deb && \
-    apt-get update && \
-    gem install bundler && \
-    bundle update
+    apt-get update
+
+COPY Gemfile .
+RUN  gem install bundler && bundle update
 
 # RUN echo "deb http://download.virtualbox.org/virtualbox/debian jessie contrib" >> /etc/apt/sources.list
 # RUN wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb

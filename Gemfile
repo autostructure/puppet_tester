@@ -22,11 +22,11 @@ group :development, :unit_tests do
 	gem 'backports'
 	gem 'metadata-json-lint'
   gem 'puppet_facts'
-	gem "specinfra", '2.64.0' # , '< 3.2.0'
-	gem "fog-vsphere", '1.5.0'
+	gem "specinfra" #, '2.64.0' # , '< 3.2.0'
+	gem "fog-vsphere" #, '1.5.0'
 	gem "hirb"
-	gem "travis"
-	gem "travis-lint"
+	# gem "travis"
+	# gem "travis-lint"
 	gem "puppet-blacksmith"
 	gem "guard-rake"
   gem 'puppetlabs_spec_helper', '>= 1.2.1'
