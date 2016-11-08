@@ -23,7 +23,7 @@ group :development, :unit_tests do
 	gem 'metadata-json-lint'
   gem 'puppet_facts'
 	gem "specinfra" #, '2.64.0' # , '< 3.2.0'
-	gem "fog-vsphere" #, '1.5.0'
+	gem 'fog-vsphere', '1.5.0'
 	gem "hirb"
 	# gem "travis"
 	# gem "travis-lint"
