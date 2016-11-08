@@ -1,6 +1,7 @@
 FROM ruby:latest
 
 COPY docker.repo /etc/yum.repos.d/
+COPY Gemfile .
 
 RUN apt-get -y update && \
     apt-get -y install apt-transport-https ca-certificates && \
